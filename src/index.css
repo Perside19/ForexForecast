@@ -1,0 +1,28 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roboto-font{
+    font-family:'Times New Roman', Times, serif;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}  
+.container-marche{
+    align-items: center;
+    gap: 2px 8px;
+    grid-template-areas:
+    "logo titleContainer"
+    "logo valueAndUnit";
+    grid-template-columns: 36px 1fr;
+    min-height: auto;
+    padding: 8px 16px 8px 12px;
+} 
+.police{
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
